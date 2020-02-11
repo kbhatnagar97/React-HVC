@@ -1,0 +1,231 @@
+body {
+  background-color: whitesmoke;
+  
+}
+.heading {
+  font-size: 42px;
+  margin:0em;
+  width: auto;
+  text-align: center;
+  padding:0.3em 0;
+  padding-left: 17em;
+  padding-right: 17em;
+  background-color: white;
+  box-shadow: 0px 0px 8px rgba(37, 40, 43, 0.12);
+  border-radius: 8px;
+}
+
+.main-body-content {
+  display:grid;
+  grid-template-columns: 4fr 1fr;
+  width:auto;
+  height:auto;
+  margin: 3em;
+}
+
+.main-content-info {
+  display:grid;
+  grid-template-rows: 1fr 1fr;
+  height: 80px;
+}
+
+.sub-heading-row {
+  display:flex;
+  justify-content: space-between;
+  padding-right: 2em;
+} 
+
+.sub-heading {
+  font-size: 40px;
+}
+
+.drop-button {
+  background-color: white;
+  color: #007EFF;
+  padding: 1em 1em;
+  padding-right:9em;
+  font-size: 12px;
+  border: 1px solid #007EFF;
+  border-radius:5px;
+}
+
+.drop-down {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  background-color: white; 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius:8px;
+  width:13em;
+  margin-top:0em;
+}
+
+.sel {
+  color: black;  
+  padding: 0.5em 1em;;
+  margin:0.4em 0;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+}
+
+.sel:hover {
+  color: #007EFF;
+
+}
+
+.drop-down:hover .dropdown-content {
+  display: block;
+}
+
+.drop-down:hover .drop-button {
+  background-color: white;
+} 
+
+.progress-bar {
+  padding: 2em 0;
+}
+
+.specs {
+  min-height: 80px;
+  height:auto;
+}
+
+.main-cost-info {
+  height: auto;
+  margin-top: 1em;
+  margin: 2em;
+  padding: 0em 1.5em;
+}
+
+.main-cost-info {
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius:8px;
+  min-height: 20em;
+}
+
+.text {
+  margin-top:0.4em;
+  margin-bottom: 1.5em;
+  font-size: 30px;
+  color: #000000;
+  }  
+
+.row2 {
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.product, .cost-estimate{
+font-size: 15px;
+}
+
+.product {
+  min-height: 10em;
+  padding-bottom: 1em;
+}
+
+.cost-estimate {
+  padding-right:1em;
+}
+
+.final-bill {
+  padding-left: 12em;
+  font-size: 25px;
+}
+
+.progress-bar {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1.2fr 1fr 1fr ;
+  margin:2m;
+  padding-right: 16em;
+}
+
+.button-1,
+.button-2,
+.button-3,
+.button-4,
+.button-5{
+  background-color: white;
+  font-size: 13px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  vertical-align: middle;
+  padding: 0.1em 1em;
+  border:none;
+  margin:0 0.5em;
+  border-bottom: 2px solid #A0A4A8;
+
+} 
+
+.button-1 {
+  color: white;
+  background-color:#007EFF;
+}
+
+.image-card {
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-right:2em;
+  border-radius: 4px;
+  width: 1240px;
+  height: 140px;
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  padding: 1em;
+}
+
+.card-image {
+background: #C4C4C4;
+border-radius: 4px;
+}
+
+.card-product-name-details {
+  padding:0 1em;
+}
+.card-product-name {
+  font-size: 32px;
+}
+
+.card-product-details {
+  font-size: 16px;  
+  margin-top: 1em;
+}
+
+.card-radio-select {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+.select-button {
+  font-size: 13px;
+  text-align: center;
+  line-height: 2em;
+  padding: 0.1em 3em;
+  margin:0.75em 1em;
+  border:0;
+  vertical-align: middle;
+  color: white;
+  background-color:#007EFF;
+  box-shadow: 0px 4px 8px rgb(127, 191, 255);;
+  border-radius: 8px;
+}
+.radio-button {
+  font-size: 15px;
+  padding:3px;
+}
+
+.card-radio {
+  display: gird;
+  grid-template-rows: 1fr 1fr;
+  margin-top:2em; 
+  margin-left:0.75em;
+}
