@@ -230,3 +230,44 @@ border-radius: 4px;
   margin-top:2em; 
   margin-left:0.75em;
 }
+
+.bb1, .bb2, .bb3, .bb4 {
+  background-color: white;
+  font-size: 20px;
+  height: 44px;
+  text-align: center;
+  line-height: 7px;
+  vertical-align: middle;
+  padding: 1.2em 2em;
+  border:none;
+  margin:0 0.5em;
+  border: 2px solid #A0A4A8;
+  border-radius: 8px;
+}
+
+.bb1 {
+  background-color: white;
+  color: #007EFF;
+  font-size: 20px;
+  height: 44px;
+  text-align: center;
+  line-height: 7px;
+  vertical-align: middle;
+  padding: 1.2em 2em;
+  border:none;
+  margin:0 0.5em;
+  border: 2px solid #007EFF;
+  border-radius: 8px; 
+}
+
+.sub-sub-heading {
+  margin-top:1.5em;
+  margin-left:0.75em;
+}
+
+.drops2 {
+  display:grid;
+  margin-top:2em;
+  grid-template-columns: 15em 15em;
+}
+
