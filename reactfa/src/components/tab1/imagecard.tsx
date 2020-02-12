@@ -63,7 +63,7 @@ export const ImageCard = () => {
 
 
 return (
-    <div id="data1">
+    <div className="data1">
         {
             Images.map((image) => {
                 return <div className="image-card">
@@ -78,7 +78,7 @@ return (
             </div>
             <div className="card-radio-select">
               <div className="card-radio">
-            <div className="radio-button"><input name="radio" type="radio"/>{image.radiobutton1}</div>
+            <div className="radio-button"><input name="radio" type="radio" checked/>{image.radiobutton1}</div>
                   <div className="radio-button"><input name="radio" type="radio"/>{image.radiobutton2}</div>
               </div>
               <div className="card-select">

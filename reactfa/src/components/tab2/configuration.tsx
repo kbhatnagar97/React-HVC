@@ -10,7 +10,7 @@ export const Config =() => {
            <button className="bb4"><b>Network Optimised</b></button>
           </div>
           <div className="sub-sub-heading">
-            Creat Configuration
+            Create Configuration
           </div>
           <div className="drops2">
             <div className="drop-down">
