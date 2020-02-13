@@ -77,7 +77,6 @@ body {
 
 .sel:hover {
   color: #007EFF;
-
 }
 
 .drop-down:hover .dropdown-content {
@@ -166,10 +165,29 @@ font-size: 15px;
   border:none;
   margin:0 0.5em;
   border-bottom: 2px solid #A0A4A8;
-
 } 
 
-.button-1 {
+.button-1:hover {
+  color: white;
+  background-color:#007EFF;
+}
+
+.button-2:hover {
+  color: white;
+  background-color:#007EFF;
+}
+
+.button-3:hover {
+  color: white;
+  background-color:#007EFF;
+}
+
+.button-4:hover {
+  color: white;
+  background-color:#007EFF;
+}
+
+.button-5:hover {
   color: white;
   background-color:#007EFF;
 }
