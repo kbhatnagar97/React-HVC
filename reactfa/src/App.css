@@ -5,6 +5,7 @@ body {
 .heading {
   font-size: 42px;
   margin:0em;
+  min-width: 12em;
   width: auto;
   text-align: center;
   padding:0.3em 0;
@@ -88,7 +89,9 @@ body {
 } 
 
 .progress-bar {
-  padding: 2em 0;
+  padding: 2em 0em;
+  display:grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
 }
 
 .specs {
@@ -229,6 +232,11 @@ border-radius: 4px;
   grid-template-rows: 1fr 1fr;
   margin-top:2em; 
   margin-left:0.75em;
+}
+
+.sub-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .bb1, .bb2, .bb3, .bb4 {  

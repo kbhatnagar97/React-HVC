@@ -6,7 +6,7 @@ export const Config =() => {
         <div className="sub-tabs">
            <button className="bb1"><b>General Purpose</b></button>
            <button className="bb2"><b>CPU Optimized</b></button>
-           <button className="bb3"><b>Choose storage and network</b></button> 
+           <button className="bb3"><b>Storage Optimised</b></button> 
            <button className="bb4"><b>Network Optimised</b></button>
           </div>
           <div className="sub-sub-heading">

@@ -4,7 +4,7 @@ import {ImageCard} from "./components/tab1/imagecard"
 import {CostInfo} from "./components/const/costestimate"
 import {Drop} from "./components/const/dropdown"
 import {Config} from "./components/tab2/configuration"
-// import {Summary} from "./components/tab5/summary"
+import {Summ} from "./components/tab5/Summary"
 
 const App = () => {  
 
@@ -14,10 +14,8 @@ const App = () => {
 
   const [heading,setHeading]=React.useState("Choose Image");
   const [main,setMain]=React.useState(<ImageCard onClick={onChangeImage}/>);
-  const [id,setid]=React.useState();
   const [selectedImage,setSelectedImage] = React.useState(0);
 
-  
   const headingcall = (check:number) => {
     console.log(1);
     if(check===1)
@@ -41,7 +39,7 @@ const App = () => {
     else if(check===5)
     {
       setHeading("Review & Lunch");
-      // setMain(<Summary />);
+      setMain(<Summ image={selectedImage} />);
 
     }
   }
@@ -60,8 +58,8 @@ const App = () => {
           </div>
           <div className="progress-bar">
               <button onClick={() => headingcall(1)} className="button-1">1. Choose Image</button>
-              <button onClick={() => headingcall(2)} className="button-2">2. Choose Instance Type</button>
-              <button onClick={() => headingcall(3)} className="button-3">3. Choose Storage and Network</button>
+              <button onClick={() => headingcall(2)} className="button-2">2. Choose Instance</button>
+              <button onClick={() => headingcall(3)} className="button-3">3. Choose Storage</button>
               <button onClick={() => headingcall(4)} className="button-4">4. Configure Security</button>
               <button onClick={() => headingcall(5)} className="button-5">5. Review & Lunch</button>
           </div>
