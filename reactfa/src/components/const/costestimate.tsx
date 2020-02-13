@@ -1,6 +1,9 @@
 import React from 'react';
+import {Images} from '../../Constants/constants';
 
-export const CostInfo = () => {
+export const CostInfo = (props : {image:number} ) => {
+  let finalPrics = Images[props.image].cost;
+
     return (
         <div className="main-cost-info">
           <div className="text">
@@ -8,15 +11,15 @@ export const CostInfo = () => {
           </div>
           <div className="row2">
             <div className="product">
-              Linux 2 Image
+              {Images[props.image].productname}
             </div>
             <div className="cost-estimate">
-              $0.0
+              {Images[props.image].cost}
             </div>
           </div>
           <hr></hr> 
           <div className="final-bill">
-            $0.0/mo
+            {finalPrics}
           </div>
         </div>
     );

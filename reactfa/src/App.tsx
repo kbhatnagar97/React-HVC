@@ -1,20 +1,29 @@
 import React from 'react';
 import './App.css';
-import {Image} from "./components/tab1/image"
+import {ImageCard} from "./components/tab1/imagecard"
 import {CostInfo} from "./components/const/costestimate"
 import {Drop} from "./components/const/dropdown"
 import {Config} from "./components/tab2/configuration"
 // import {Summary} from "./components/tab5/summary"
 
 const App = () => {  
-  const [heading,setHeading]=React.useState("1. Choose Image");
-  const [main,setMain]=React.useState(<Image/>);
+
+  const onChangeImage = (i:number) => {
+    setSelectedImage(i);
+  }
+
+  const [heading,setHeading]=React.useState("Choose Image");
+  const [main,setMain]=React.useState(<ImageCard onClick={onChangeImage}/>);
+  const [id,setid]=React.useState();
+  const [selectedImage,setSelectedImage] = React.useState(0);
+
+  
   const headingcall = (check:number) => {
     console.log(1);
     if(check===1)
     {
       setHeading("Choose Image");
-      setMain(<Image/>);
+      setMain(<ImageCard onClick={onChangeImage}/>);
     }
     else if(check===2)
     {
@@ -56,10 +65,11 @@ const App = () => {
               <button onClick={() => headingcall(4)} className="button-4">4. Configure Security</button>
               <button onClick={() => headingcall(5)} className="button-5">5. Review & Lunch</button>
           </div>
+         
           {main}
 
         </div>
-        <CostInfo />
+        <CostInfo image={selectedImage} />
       </div>
     </body>
   );
